@@ -1,0 +1,14 @@
+version: '3' 
+services: 
+  app:  
+    image: 'quangche/happy-hour-app' 
+    restart: always
+    ports: 
+      - '3000:3000'
+  app-test: 
+    image: 'app_happy-hour-test'
+  api: 
+    image: 'quangche/node-happy-hour'
+    restart: always
+    ports: 
+      - '9000:9000'
