@@ -1,0 +1,37 @@
+.nav-menu {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #333333;
+  transition: all 0.2s ease-in;
+  transform: translateX(0);
+  transform-origin: 100% 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e6e6e6;
+
+    li:hover {
+      cursor: pointer;
+      animation: color-change 1s infinite;
+    }
+  }
+}
+
+.nav-menu-close {
+  transition: all 0.2s ease-out;
+  transform: translateX(100%);
+  transform-origin: 100% 0%;
+}

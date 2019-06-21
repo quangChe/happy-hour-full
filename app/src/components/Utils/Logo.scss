@@ -1,0 +1,19 @@
+.logo-container {
+  height: 50px;
+  margin-top: -3px;
+
+  .title {
+    font-family: 'Pacifico';
+    color: #dad3b8;
+    font-size: 1.6rem;
+    display: inline;
+    margin-left: -20px;
+    vertical-align: 2px;
+    text-decoration: none;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+}

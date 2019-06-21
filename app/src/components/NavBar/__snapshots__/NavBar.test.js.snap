@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar renders correctly 1`] = `
+<div
+  id="navigation-container"
+>
+  <NavSliderMenu
+    opened={false}
+  />
+  <div
+    className="navbar"
+    style={
+      Object {
+        "color": "#333333",
+      }
+    }
+  >
+    <Link
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
+      to="/"
+    >
+      <Logo />
+    </Link>
+    <NavButton
+      onClick={[Function]}
+      open={false}
+    />
+  </div>
+</div>
+`;

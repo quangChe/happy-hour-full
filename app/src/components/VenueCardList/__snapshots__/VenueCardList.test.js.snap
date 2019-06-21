@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<VenueCardList /> renders without crashing 1`] = `
+<div
+  className="venues-container"
+>
+  <div
+    className="venues-scrollbox"
+  >
+    <VenueCard
+      handleClick={[Function]}
+      key="1"
+      venue={
+        Object {
+          "id": 1,
+          "image_url": "https://via.placeholder.com/150",
+          "name": "Test 1",
+        }
+      }
+      width={1024}
+    />
+    <VenueCard
+      handleClick={[Function]}
+      key="2"
+      venue={
+        Object {
+          "id": 2,
+          "image_url": "https://via.placeholder.com/150",
+          "name": "Test 2",
+        }
+      }
+      width={1024}
+    />
+    <VenueCard
+      handleClick={[Function]}
+      key="3"
+      venue={
+        Object {
+          "id": 3,
+          "image_url": "https://via.placeholder.com/150",
+          "name": "Test 3",
+        }
+      }
+      width={1024}
+    />
+  </div>
+</div>
+`;

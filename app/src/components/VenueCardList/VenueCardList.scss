@@ -1,0 +1,27 @@
+.venues-container {
+  height: 100%;
+  font-family: 'Helvetica';
+  color: #f2f2d9;
+  overflow-y: hidden;
+  position: relative;
+
+  .venues-scrollbox {
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    .status {
+      position: absolute;
+      font-size: 1rem;
+      font-weight: 400;
+      top: 20px;
+      left: 50px;
+      z-index: 2;
+    }
+  }
+}
+
+
