@@ -4,3 +4,6 @@ services:
 
 before_install:
   - docker build -t quangche/happy-hour-app -f Dockerfile.dev .
+
+script: 
+  - docker container run quangche/happy-hour-app npm run test -- --coverage
