@@ -1,9 +1,9 @@
-sudo: required #
+sudo: required # Necessary for Travis CI
 services: 
-  - docker
+  - docker # Sets up Docker
 
 before_install:
-  - docker build -t quangche/happy-hour-app -f Dockerfile.dev .
+  - docker build -t quangche/happy-hour-app -f Dockerfile.dev . # Builds image 
 
 script: 
-  - docker container run quangche/happy-hour-app npm run test -- --coverage
+  - docker container run quangche/happy-hour-app npm run test -- --coverage # Runs container and coverage test
