@@ -3,7 +3,7 @@ services:
   - docker # Sets up Docker
 
 before_install:
-  - docker build -t quangche/happy-hour-app -f Dockerfile.dev /app # Builds image 
+  - docker build -t quangche/happy-hour-app -f ./app/Dockerfile.dev ./app # Builds image 
 
 script: 
   - docker container run quangche/happy-hour-app npm run test -- --coverage # Runs container and coverage test
