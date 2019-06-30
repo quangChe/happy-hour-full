@@ -7,3 +7,9 @@ before_install:
 
 script: 
   - docker container run quangche/happy-hour-app npm run test -- --coverage # Runs container and coverage test
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-2"
+  app: "happy-hour"
+  env: "HappyHourApp"
