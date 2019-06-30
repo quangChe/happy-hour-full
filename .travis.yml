@@ -13,3 +13,7 @@ deploy:
   region: "us-east-2"
   app: "happy-hour-app"
   env: "HappyHourApp-env"
+  bucket_name: "elasticbeanstalk-us-east-2-720379818253"
+  bucket_path: "happy-hour-app"
+  on: 
+    branch: master
