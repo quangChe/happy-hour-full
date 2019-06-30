@@ -11,5 +11,5 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "us-east-2"
-  app: "happy-hour"
-  env: "HappyHourApp"
+  app: "happy-hour-app"
+  env: "HappyHourApp-env"
