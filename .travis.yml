@@ -10,17 +10,14 @@ script:
 
 deploy:
   provider: elasticbeanstalk
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: "$AWS_SECRET_KEY"
   region: "us-east-2"
   app: "happy-hour-app"
   env: "HappyHourApp-env"
   bucket_name: "elasticbeanstalk-us-east-2-720379818253"
   bucket_path: "happy-hour-app"
-  on: 
-    branch: master
-  access_key_id: 
-    secure: $AWS_ACCESS_KEY
-  secret_access_key: 
-    secure: $AWS_SECRET_KEY
   before_deploy: "echo 'Preparing to deploy.'"
   deploy: "echo 'Deploying...'"
   after_deploy: "echo 'Completed deployment.'"
