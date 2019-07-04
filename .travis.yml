@@ -6,7 +6,7 @@ before_install:
   - docker build -t quangche/happy-hour-app -f ./app/Dockerfile.dev ./app # Builds image 
 
 script: 
-  - docker container run quangche/happy-hour-app npm run test -- --coverage # Runs container and coverage test
+  - docker container run quangche/happy-hour-app npm run ci_test -- --coverage # Runs container and coverage test
 
 before_deploy: "echo 'Preparing to deploy.'"
 
